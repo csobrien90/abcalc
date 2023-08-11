@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="sr-only">Calculator App</h1>
+	<section aria-label="Calculator" id="calculator">
+		<div class="display">
+			<label for="input-display" class="sr-only">Calculator Display</label>
+			<input type="text" id="input-display" aria-live="polite" aria-atomic="true" readonly>
+		</div>
+		<p id="error"></p>
+		<p id="non-visual-error" class="sr-only" aria-live="assertive" aria-atomic="true"></p>
+		<div class="buttons">
+			<div class="row">
+				<button class="btn" id="clear" aria-label="clear">C</button>
+				<button class="btn" id="backspace" aria-label="backspace">⌫</button>
+				<button class="btn" id="raise-to-power" aria-label="raise to the power of">^</button>
+				<button class="btn" id="divide" aria-label="divide">÷</button>
+			</div>
+			<div class="row">
+				<button class="btn" id="seven">7</button>
+				<button class="btn" id="eight">8</button>
+				<button class="btn" id="nine">9</button>
+				<button class="btn" id="multiply" aria-label="multiply">x</button>
+			</div>
+			<div class="row">
+				<button class="btn" id="four">4</button>
+				<button class="btn" id="five">5</button>
+				<button class="btn" id="six">6</button>
+				<button class="btn" id="subtract" aria-label="subtract/negative">-</button>
+			</div>
+			<div class="row">
+				<button class="btn" id="one">1</button>
+				<button class="btn" id="two">2</button>
+				<button class="btn" id="three">3</button>
+				<button class="btn" id="add" aria-label="add">+</button>
+			</div>
+			<div class="row">
+				<button class="btn" id="zero">0</button>
+				<button class="btn" id="decimal" aria-label="decimal">.</button>
+				<button class="btn" id="equals" aria-label="equals">=</button>
+			</div>
+		</div>
+	</section>	  
+</body>
+<script src="script.js"></script>
+<script src="tests.js"></script>
+</html>
